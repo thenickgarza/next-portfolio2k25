@@ -7,7 +7,7 @@ export default function About() {
         <p className="text-gray-600 mb-2">Full Stack Developer</p>
         <div className="flex justify-center space-x-4 text-sm text-gray-500">
           <span>📧 thenickgarza@gmail.com</span>
-          <span>📱 (808) 631-7708</span>
+          <span><a className="hover:text-blue-400" href="tel:+18086317708">📱 (808) 631-7708</a></span>
         </div>
       </div>
 
