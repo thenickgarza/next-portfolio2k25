@@ -19,7 +19,7 @@ export default function IndexPage() {
       
       <div className="mt-6 flex justify-center space-x-4">
         <a
-          href="/#projects"
+          href="/projects"
           className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-medium transition-all dark:bg-blue-400 dark:hover:bg-blue-500"
         >
           View My Work

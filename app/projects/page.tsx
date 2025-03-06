@@ -48,10 +48,10 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-gray-900 min-h-screen">
       <div className="text-center mb-12">
-        <h1 className="text-6xl font-bold mb-4">Projects</h1>
-        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        <h1 className="text-6xl font-bold mb-4 text-white">Projects</h1>
+        <p className="text-gray-300 max-w-2xl mx-auto">
           A collection of my work showcasing my skills and experience in web development.
         </p>
       </div>
@@ -60,24 +60,24 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-amber-500/20 hover:shadow-xl transition-all duration-300 border border-gray-700"
           >
-            <div className="aspect-video bg-gray-200 dark:bg-gray-700">
+            <div className="aspect-video bg-gray-700">
               {/* Replace with actual project image */}
               <div className="w-full h-full flex items-center justify-center text-gray-400">
                 Project Image
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
+              <p className="text-gray-300 mb-4">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm"
+                    className="px-3 py-1 bg-gray-700 text-amber-400 rounded-full text-sm border border-amber-400/20"
                   >
                     {tech}
                   </span>
@@ -88,9 +88,10 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
+                  className="text-amber-400 hover:text-amber-300 transition-colors duration-200 flex items-center gap-1 group"
                 >
-                  View Project →
+                  View Project 
+                  <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </a>
               )}
             </div>
