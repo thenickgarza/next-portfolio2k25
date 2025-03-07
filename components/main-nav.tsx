@@ -26,7 +26,7 @@ export function MainNav({ items }: MainNavProps) {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "flex items-center text-sm text-white font-medium text-muted-foreground",
+                    "flex items-center text-sm text-amber-300 font-medium",
                     item.disabled && "cursor-not-allowed"
                   )}
                 >

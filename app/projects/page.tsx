@@ -1,5 +1,4 @@
-import { useEffect } from "react"
-import { Icons } from "@/components/icons"
+import Image from "next/image"
 
 interface Project {
   id: number;
@@ -14,35 +13,35 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Project One",
-    description: "A brief description of your first project and its key features.",
-    imageUrl: "/placeholder.jpg",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    link: "https://github.com/yourusername/project1"
+    title: "EaglePI",
+    description: "Description of your second project highlighting its main functionalities.",
+    imageUrl: "/images/EaglePI.png",
+    technologies: ["PHP", "Wordpress", "ACF", "WPML"],
+    link: "https://eaglepi.com"
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "Description of your second project highlighting its main functionalities.",
-    imageUrl: "/placeholder.jpg",
-    technologies: ["Next.js", "Node.js", "MongoDB"],
-    link: "https://github.com/yourusername/project2"
+    title: "Evergreen Recycling",
+    description: "A brief description of your first project and its key features.",
+    imageUrl: '/images/Evergreen.png',
+    technologies: ["PHP", "Wordpress", "Elementor"],
+    link: "https://evergreen-recycling.com"
   },
   {
     id: 3,
-    title: "Project Three",
+    title: "Sunbright Recycling",
     description: "Description of your third project highlighting its main functionalities.",
-    imageUrl: "/placeholder.jpg",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    link: "https://github.com/yourusername/project3"
+    imageUrl: "/images/Sunbright.png",
+    technologies: ["PHP", "Wordpress", "Elementor"],
+    link: "https://sunbright-recycling.com"
   },
   {
     id: 4,
-    title: "Project Four",
+    title: "Weather Dashboard",
     description: "Description of your fourth project highlighting its main functionalities.",
-    imageUrl: "/placeholder.jpg",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    link: "https://github.com/yourusername/project4"
+    imageUrl: "/images/Weather-Dashboard.png",
+    technologies: ["HTML", "Bootstrap", "Javascript"],
+    link: "https://github.com/thenickgarza/Weather-Dashboard"
   },
   // Add more projects as needed
 ];
@@ -63,11 +62,20 @@ export default function Projects() {
             key={project.id}
             className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-amber-500/20 hover:shadow-xl transition-all duration-300 border border-gray-700"
           >
-            <div className="aspect-video bg-gray-700">
-              {/* Replace with actual project image */}
-              <div className="w-full h-full flex items-center justify-center text-gray-400">
-                Project Image
-              </div>
+            <div className="aspect-video bg-gray-700 relative">
+              {project.imageUrl ? (
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-gray-400">
+                  Project Image
+                </div>
+              )}
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
