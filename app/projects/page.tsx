@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Icons } from "@/components/icons"
 
 interface Project {
   id: number;
@@ -50,9 +51,9 @@ export default function Projects() {
   return (
     <div className="container mx-auto px-4 py-8 bg-gray-900 min-h-screen">
       <div className="text-center mb-12">
-        <h1 className="text-6xl font-bold mb-4 text-white">Projects</h1>
+        <h1 className="text-6xl font-bold mb-4 text-white animate-[slide-in_0.5s_ease-out]">Projects</h1>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          A collection of my work showcasing my skills and experience in web development.
+          A collection of websites I've built and/or contributed to.
         </p>
       </div>
 
@@ -88,9 +89,9 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-amber-400 hover:text-amber-300 transition-colors duration-200 flex items-center gap-1 group"
+                  className="text-amber-400 hover:text-amber-300 transition-colors duration-200 flex items-center gap-2 group w-fit px-4 py-2 rounded-full bg-gray-700/50 hover:bg-gray-700 border border-amber-400/20 hover:border-amber-400/40"
                 >
-                  View Project 
+                  <span>View Project</span>
                   <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </a>
               )}
