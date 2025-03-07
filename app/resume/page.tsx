@@ -52,6 +52,22 @@ export default function About() {
               <li>Adhere to grading timelines and standards.</li>
             </ul>
           </div>
+          <div>
+            <div className="flex justify-between items-start mb-2">
+              <h3 className="text-xl font-medium text-white">Jr Software Developer</h3>
+              <span className="text-gray-300">11/2022 - 01/2023</span>
+            </div>
+            <p className="text-gray-300 mb-2">Invoice Home</p>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              <li>Developed and maintained web applications using Ruby on Rails framework</li>
+              <li>Designed and implemented database solutions using PostgreSQL</li>
+              <li>Contributed to open-source projects and collaborated with cross-functional teams on GitHub</li>
+              <li>Built dynamic and interactive user interfaces using JavaScript, Bootstrap, and its frameworks</li>
+              <li>Implemented unit and integration tests to ensure the stability and performance of applications</li>
+              <li>Participated in code reviews, bug fixing, and continuous integration and deployment processes</li>
+              <li>Learned and applied new technologies and tools to solve business problems and improve product quality</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -74,10 +90,16 @@ export default function About() {
           <div className="bg-gray-800 p-3 rounded-lg border border-gray-700">
             <h3 className="font-medium mb-2 text-white">Frontend</h3>
             <ul className="text-gray-300 space-y-1">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
               <li>React</li>
               <li>TypeScript</li>
               <li>Tailwind CSS</li>
               <li>Next.js</li>
+              <li>Bootstrap</li>
+              <li>WordPress</li>
+              <li>Hubspot</li>
             </ul>
           </div>
           <div className="bg-gray-800 p-3 rounded-lg border border-gray-700">
@@ -97,6 +119,10 @@ export default function About() {
               <li>Git</li>
               <li>AWS</li>
               <li>CI/CD</li>
+              <li>DNS</li>
+              <li>SPF</li>
+              <li>MX</li>
+              <li>DKIM</li>
             </ul>
           </div>
         </div>
