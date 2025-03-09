@@ -43,6 +43,22 @@ const projects: Project[] = [
     technologies: ["HTML", "Bootstrap", "Javascript"],
     link: "https://github.com/thenickgarza/Weather-Dashboard"
   },
+  {
+    id: 5,
+    title: "Invoice Home",
+    description: "Description of your fifth project highlighting its main functionalities.",
+    imageUrl: "/images/InvoiceHome.png",
+    technologies: ["Ruby on Rails", "PostgreSQL", "Docker"],
+    link: "https://invoicehome.com"
+  },
+  {
+    id: 6,
+    title: "MFG Tribe",
+    description: "Description of your sixth project highlighting its main functionalities.",
+    imageUrl: "/images/MFGTribe.png",
+    technologies: ["PHP", "Wordpress", "Avada"],
+    link: "https://mfgtribe.com"
+  }
   // Add more projects as needed
 ];
 
@@ -68,7 +84,7 @@ export default function Projects() {
                   src={project.imageUrl}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className=""
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               ) : (
